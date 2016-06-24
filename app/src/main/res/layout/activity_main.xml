@@ -1,13 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:orientation="vertical">
 
-    <administrator.example.com.canvasdemo.SloopView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-         />
-</RelativeLayout>
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/bt_get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="乌云Get请求" />
+
+        <Button
+            android:id="@+id/bt_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="乌云Post请求" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/imgageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+<administrator.example.com.canvasdemo.SloopView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+
+</LinearLayout>
